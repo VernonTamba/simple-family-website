@@ -182,3 +182,30 @@
   color: var(--clr-headline);
   font-size: 2rem;
 }
+
+.main__members {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.main__membersCard {
+  border: 5px solid var(--clr-main);
+  display: flex;
+  align-items: center;
+  margin: 1em;
+  transition: all 0.3s ease;
+}
+
+.main__membersCard img {
+  height: 10rem;
+  width: 10em;
+  object-fit: cover;
+  margin-right: 2em;
+}
+
+.main__membersCard:hover {
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px,
+    rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px,
+    rgba(240, 46, 170, 0.05) 25px 25px;
+  transform: translateY(-10px);
+}
