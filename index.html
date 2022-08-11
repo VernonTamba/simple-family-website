@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Simple Family Website</title>
+  </head>
+
+  <!-- TODO: Make a landing page to put a username and use that name in the main page -->
+
+  <body>
+    <!-- Header & Navbar -->
+    <header class="header">
+      <nav class="navbar">
+        <div class="navbar__logo">
+          <h1 class="navbar__logoTitle">Roger<br />Family</h1>
+        </div>
+        <div class="navbar__menus">
+          <ul class="navbar__links">
+            <li class="navbar__link">
+              <a href="/"><i class="fa-solid fa-house"></i></a>
+            </li>
+            <li class="navbar__link"><a href="/">Address</a></li>
+            <li class="navbar__link"><a href="/">Members</a></li>
+            <li class="navbar__link"><a href="/">Songs</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+      <!-- Home Page -->
+      <div class="main__home">
+        <h1 class="main__homeTitle">Family is <br /><span>everything</span></h1>
+        <h3 class="main__homeSubtitle">
+          We are the <span>Roger Family</span>.
+        </h3>
+        <p class="main__homeDescription">
+          As you scroll down and explore, you will surely get to know us very
+          well. It is so nice to see you, <span>Vernon</span>!
+        </p>
+        <blockquote
+          class="main__homeQuote"
+          cite="https://parade.com/1045384/marynliles/family-quotes/"
+        >
+          “It didn’t matter how big our house was; it mattered that there was
+          love in it.” <br />— Peter Buffett
+        </blockquote>
+      </div>
+
+      <!-- Home Address -->
+      <div class="main__address">
+        <h2>Come and visit us here, Vernon!</h2>
+        <p>Home sweet home.</p>
+        <div class="main__addressContainer">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1983.0431422818158!2d106.95938999268996!3d-6.252361399682499!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x892dc53ab0197ca9!2zNsKwMTUnMDguNSJTIDEwNsKwNTcnMzUuOSJF!5e0!3m2!1sen!2sid!4v1660205942263!5m2!1sen!2sid"
+            width="500"
+            height="350"
+            style="border: 0; border-radius: 1rem"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <div class="main__addressDescription">
+            <h2>Bekasi, Indonesia</h2>
+            <p>
+              Jl. Wijaya Kusuma 1 No. 7, Kampung Dua, Kalimalang, Jakasampurna
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Family Members -->
+      <div class="main__members">
+        <!-- Let me introduce to you my family members.. -->
+      </div>
+
+      <!-- Songs (video) -->
+      <div class="main__songs"></div>
+    </main>
+    <!-- Footer -->
+    <footer class="footer"></footer>
+  </body>
+  <script src="script.js"></script>
+</html>
