@@ -23,7 +23,7 @@
 /* -- Header Content -- */
 
 .header {
-  height: 15vh;
+  /* height: 15vh; */
   background-color: var(--clr-background);
   display: flex;
   align-items: center;
@@ -33,6 +33,7 @@
   z-index: 100;
   transition: all 0.3s ease-in-out;
   color: var(--clr-headline);
+  padding: 2em 8em;
 }
 
 .header.header__active {
@@ -53,6 +54,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /* height: 100%; */
 }
 
 .navbar__logoTitle {
@@ -76,16 +78,29 @@
 
 .navbar__link {
   list-style: none;
-  position: relative;
+  margin-block: 0.3em;
+  transition: all 0.5s ease;
 }
 
 .navbar__link a {
   text-decoration: none;
   color: var(--clr-headline);
+  transition: all 0.5s ease;
+  padding: 0.5em;
 }
 
 .navbar__link a:hover {
-  border-bottom: 3px solid var(--clr-highlight);
+  transform: translateY(20px);
+  font-weight: 700;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.navbar__link--active {
+  transform: translateY(-50px);
+  font-weight: 700;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .fa-house {

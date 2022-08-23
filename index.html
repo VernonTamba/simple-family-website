@@ -33,18 +33,27 @@
         <div class="navbar__menus">
           <ul class="navbar__links">
             <li class="navbar__link">
-              <a href="/"><i class="fa-solid fa-house"></i></a>
+              <a id="home__link" href="#home"
+                ><i class="fa-solid fa-house"></i
+              ></a>
             </li>
-            <li class="navbar__link"><a href="/">Address</a></li>
-            <li class="navbar__link"><a href="/">Members</a></li>
-            <li class="navbar__link"><a href="/">Songs</a></li>
+            <li class="navbar__link">
+              <a id="address__link" href="#address">Address</a>
+            </li>
+            <li class="navbar__link">
+              <a id="members__link" href="#members">Members</a>
+            </li>
+            <li class="navbar__link">
+              <a id="songs__link" href="#songs">Songs</a>
+            </li>
           </ul>
         </div>
       </nav>
     </header>
 
     <!-- Main Content -->
-    <main class="main">
+    <!-- TODO: When home link is clicked, it does not go to the very top. Fix this! -->
+    <main id="home" class="main">
       <!-- Home Page -->
       <div class="main__home">
         <h1 class="main__homeTitle">Family is <br /><span>everything</span></h1>
@@ -65,7 +74,7 @@
       </div>
 
       <!-- Home Address -->
-      <div class="main__address">
+      <div id="address" class="main__address">
         <h2><span>Home</span> sweet home.</h2>
         <p>Come and visit us here!</p>
         <div class="main__addressContainer">
@@ -88,13 +97,13 @@
       </div>
 
       <!-- Family Members -->
-      <div class="main__members">
+      <div id="members" class="main__members">
         <!-- Let me introduce to you my family members.. -->
         <h2>The <span>members</span> of Roger Family!</h2>
         <p>This is my family!</p>
         <div class="main__membersGrid">
           <div class="main__membersCard">
-            <img src="img/members/father.jpg" alt="Father" />
+            <img src="img/members_small/father.jpg" alt="Father" />
             <div class="main__membersCardInfo">
               <h3>John Roger</h3>
               <p>Father</p>
@@ -102,7 +111,7 @@
             </div>
           </div>
           <div class="main__membersCard">
-            <img src="img/members/mother.jpg" alt="Mother" />
+            <img src="img/members_small/mother.jpg" alt="Mother" />
             <div class="main__membersCardInfo">
               <h3>Jane Hillary</h3>
               <p>Mother</p>
@@ -110,7 +119,7 @@
             </div>
           </div>
           <div class="main__membersCard">
-            <img src="img/members/first.jpg" alt="First Child" />
+            <img src="img/members_small/first.jpg" alt="First Child" />
             <div class="main__membersCardInfo">
               <h3>Rodrigo Roger</h3>
               <p>First Child</p>
@@ -118,7 +127,7 @@
             </div>
           </div>
           <div class="main__membersCard">
-            <img src="img/members/second.jpg" alt="Second Child" />
+            <img src="img/members_small/second.jpg" alt="Second Child" />
             <div class="main__membersCardInfo">
               <h3>Blake Roger</h3>
               <p>Second Child</p>
@@ -126,7 +135,7 @@
             </div>
           </div>
           <div class="main__membersCard">
-            <img src="img/members/third.jpg" alt="Third Child" />
+            <img src="img/members_small/third.jpg" alt="Third Child" />
             <div class="main__membersCardInfo">
               <h3>Christian Roger</h3>
               <p>Third Child</p>
@@ -134,7 +143,7 @@
             </div>
           </div>
           <div class="main__membersCard">
-            <img src="img/members/fourth.jpg" alt="Fourth Child" />
+            <img src="img/members_small/fourth.jpg" alt="Fourth Child" />
             <div class="main__membersCardInfo">
               <h3>Emilia Roger</h3>
               <p>Fourth Child</p>
@@ -145,7 +154,7 @@
       </div>
 
       <!-- Songs (video) -->
-      <div class="main__songs">
+      <div id="songs" class="main__songs">
         <div class="main__songsInfo">
           <h1>Music</h1>
           <h3>is part of our family.</h3>
