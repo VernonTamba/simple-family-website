@@ -9,7 +9,9 @@ const footerHeading = document.querySelector(".footer__closing h4");
 const footerParagraph = document.querySelector(".footer__closing p");
 
 window.addEventListener("scroll", () => {
+  // Just to check the scroll position
   console.log(window.scrollY);
+
   if (window.scrollY >= 100) {
     header.classList.add("header__active");
     navbarLink.forEach((link) => {
@@ -50,7 +52,3 @@ window.addEventListener("scroll", () => {
     songsLink.classList.remove("navbar__link--active");
   }
 });
-
-// if(window.innerWidth){
-
-// }
