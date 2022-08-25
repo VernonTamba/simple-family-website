@@ -20,8 +20,13 @@ window.addEventListener("scroll", () => {
     // TODO: Find the dynamic element of scroll height
     if (window.scrollY >= 3350) {
       footer.classList.add("footer__active");
-      footerHeading.style.fontSize = "2.5rem";
-      footerParagraph.style.fontSize = "1.5rem";
+      if (window.innerWidth <= 768) {
+        footerHeading.style.fontSize = "2rem";
+        footerParagraph.style.fontSize = "1rem";
+      } else {
+        footerHeading.style.fontSize = "2.5rem";
+        footerParagraph.style.fontSize = "1.5rem";
+      }
     } else {
       footer.classList.remove("footer__active");
       footerHeading.style.fontSize = "1.5rem";
